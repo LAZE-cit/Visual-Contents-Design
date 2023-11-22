@@ -1,0 +1,39 @@
+.a1{
+    font-size: 55px;
+    text-align: center;
+    font-family: serif;
+}
+
+.a2{
+    font-size: 30px;
+    font-family: serif;
+}
+
+.a3{
+    font-size: 40px;
+    font-family: serif;
+}
+
+.a4{
+    font-size: 20px;
+    background: white;
+    text-align: center;
+    color: gray;
+}
+
+body{
+    background-image: url(pictures/sekai.jpeg);
+}
+
+.Italy img{
+    width: 80%;
+}
+
+.pic{
+    width: 360px;
+    height: 360px;
+}
+
+.wine{
+    width: 30%;
+}

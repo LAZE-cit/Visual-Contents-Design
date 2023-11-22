@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!--文字コード規定記述-->
+    <meta charset="UTF-8">
+    <!--マルチデバイス対応記述-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--bootstrap/css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  
+    <link rel="stylesheet" type="text/css" href="sample.css">
+
+    <!--ページ題名-->
+    <title>第1回提出課題</title>
+
+    <!--店舗画像表示（クリックでトップページ）-->
+    <a href="index.html">
+        <img src="pictures/store.png" width="320" height="180">
+    </a>
+
+</head>
+
+<body>
+    <p class="a1">ご予約フォーム</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">メールアドレス</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="XXX-XXX@example.com">
+                        <small id="emailHelp" class="form-text text-muted">入力していただいたメールアドレスは今回の予約以外の用途には一切使用いたしません．<br>また，迷惑メール設定による受信拒否にご注意ください（確認メールが届かない場合は再度ご予約をお願いします）．</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputName1">ご予約者様氏名（会社名義のクレジットカードを使用する場合はカード名義で予約してください）</label>
+                        <input type="name" class="form-control" id="exampleInputname1" placeholder="イタリアン　太郎">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPeaple1">ご予約人数</label>
+                        <input type="people" class="form-control" id="exampleInputpeople1" placeholder="○人">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputCard1">クレジットカード情報</label>
+                        <input type="card" class="form-control" id="exampleInputcard1" placeholder="XXXX-XXXX-XXXX-XXXX">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputCode1">セキュリティコード</label>
+                        <input type="code" class="form-control" id="exampleInputcode1" placeholder="XXX">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputCname1">カード名義</label>
+                        <input type="cname" class="form-control" id="exampleInputcname1" placeholder="TAROU　ITALIAN">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPhone1">電話番号</label>
+                        <input type="phone" class="form-control" id="exampleInputphone1" placeholder="XXX-XXX-XXXX">
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="radio" class="form-check-input" name="flexRadioDefault" id="exampleCheck1" checked>
+                        <label class="form-check-label" for="exampleCheck1">コースA（飲み放題なし）</label><br>
+                        <input type="radio" class="form-check-input" name="flexRadioDefault" id="exampleCheck2">
+                        <label class="form-check-label" for="exampleCheck1">コースB（飲み放題：ソフトドリンクのみ）</label><br>
+                        <input type="radio" class="form-check-input" name="flexRadioDefault" id="exampleCheck3">
+                        <label class="form-check-label" for="exampleCheck1">コースC（飲み放題：アルコール含む）</label><br>
+                    </div>
+                    <hr>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">ご質問やご要望がある場合は以下に記載してください．<br>１〜２営業日以内にメールにて返信いたします（メールが届かない場合はお手数ですが，当店までご連絡ください）．</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="alert('予約が確定しました．ご予約内容の変更がある場合は店舗まで直接ご連絡ください．');window.close()">予約確定</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <p class="a4">
+        イタリアン料理専門店「サイゼリヤ」<br>
+        TEL:XXX-XXX-XXXX<br>
+        住所:〒275-0016 千葉県習志野市津田沼２丁目１７−１ ７号館３階PC演習室
+    </p>
+
+  <!--Bootstrap/JS-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+
+</html>
